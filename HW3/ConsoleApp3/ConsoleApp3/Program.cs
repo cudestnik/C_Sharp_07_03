@@ -1,5 +1,5 @@
 ﻿// Напишите программуБ которая принимает на вход число (N)
-// и выдаёт таблицу квадратов чисел от 1 до N
+// и выдаёт таблицу кубов чисел от 1 до N
 
 
 void Pow(int num)
@@ -8,8 +8,8 @@ void Pow(int num)
 
     while (i <= num)
     {
-        Console.WriteLine(Math.Pow(i,2));
-        i++;        
+        Console.WriteLine(Math.Pow(i, 3));
+        i++;
     }
 }
 int number = int.Parse(Console.ReadLine()!);
