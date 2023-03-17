@@ -1,30 +1,40 @@
 ﻿// Задача2. Напишите программу, которая принимает на
 // вход число и выдает сумму всех цифр в числе.
 
-int num = GetUserNumber();
-int digits = MultiplyNumbers(num);
-Console.WriteLine(digits);
 
-int GetUserNumber()
+int number = ReadInt("Введите число: ");
+int len = NumberLen(number);
+SumNumbers(number, len);
+
+
+// Функция ввода
+int ReadInt(string message)
 {
-
-    int number = 0;
-    while (number == 0)
-    {
-        Console.Write("Пожалуйста введите число: ");
-        number = int.Parse(Console.ReadLine()!);
-    }
-    return number;
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
 }
 
-int MultiplyNumbers(int n)
+// Функция подсчета цифр в числе
+int NumberLen(int a)
 {
-
-    int multi = 1;
-    for (int i = 1; i <= n; i++)
+    int index = 0;
+    while (a > 0)
     {
-        multi = multi + i;
+        a /= 10;
+        index++;
     }
-    return multi;
+    return index;
+}
+
+// Функция вывода суммы цифр в числе
+void SumNumbers(int n, int len)
+{
+    int sum = 0;
+    for (int i = 1; i <= len; i++)
+    {
+        sum += n % 10;
+        n /= 10;
+    }
+    Console.WriteLine(sum);
 }
 Console.ReadKey();
