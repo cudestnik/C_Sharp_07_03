@@ -27,3 +27,4 @@ int CountNumbers(int n)
     }
     return count;
 }
+Console.ReadKey();

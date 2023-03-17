@@ -14,3 +14,4 @@ int SumNum(int num)
 int val = int.Parse(Console.ReadLine()!);
 int result = SumNum(val);
 Console.WriteLine(result);
+Console.ReadKey();

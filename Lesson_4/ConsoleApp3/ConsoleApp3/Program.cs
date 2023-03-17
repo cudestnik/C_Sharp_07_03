@@ -27,3 +27,4 @@ int MultiplyNumbers(int n)
     }
     return multi;
 }
+Console.ReadKey();
