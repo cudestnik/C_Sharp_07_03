@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 1. Напишите цикл ,который принимает на вход два числа (А и В )
+// и возводит число А в натуральную степень В.
+
+
